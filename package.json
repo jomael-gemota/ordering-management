@@ -1,0 +1,31 @@
+{
+  "dependencies": {
+    "ckey": "^1.0.3",
+    "concurrently": "^9.1.2",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "mongoose": "^8.9.7",
+    "nodemon": "^3.1.9",
+    "path": "^0.12.7"
+  },
+  "name": "ordering-management",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "build": "cd portal && npm install && npm run build",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix portal && npm run build --prefix portal",
+    "dev": "concurrently \"npm run start\" \"npm --prefix ./portal run dev\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jomael-gemota/ordering-management.git"
+  },
+  "author": "Jomael Gemota",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jomael-gemota/ordering-management/issues"
+  },
+  "homepage": "https://github.com/jomael-gemota/ordering-management#readme"
+}
