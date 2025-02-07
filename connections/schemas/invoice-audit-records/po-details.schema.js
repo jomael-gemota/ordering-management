@@ -5,6 +5,7 @@ const poDetailsSchema = new mongoose.Schema(
         brand: { type: String, required: true },
         segment: { type: String, required: true },
         poNumber: { type: String, unique: true },
+        pullPOItems: { type: Array },
         listingDataItems: { type: Array },
         ocItems: { type: Array },
         invoiceItems: { type: Array },
