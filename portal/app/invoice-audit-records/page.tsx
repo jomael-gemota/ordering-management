@@ -19,7 +19,6 @@ export default function InvoiceAuditRecordsPage() {
         <div className="p-6" suppressHydrationWarning>
             <h1 className="text-lg font-bold mb-4">Invoice Audit Records</h1>
 
-            {/* Menu Tabs */}
             <div className="bg-white p-4 shadow-md flex flex-row space-x-4 text-sm">
                 {TABS.map((tab) => (
                     <button
