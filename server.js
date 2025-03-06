@@ -20,9 +20,9 @@ app.use(cors());
 routes.initRoutes({ app });
 
 if (process.env.NODE_ENV === 'production') {
-    app.use(express.static(path.resolve(__dirname, './client/build')));
+    app.use(express.static(path.resolve(__dirname, './portal/.next/server/app')));
     app.get('*', (req, res) => {
-        res.sendFile(path.resolve(__dirname, './client/build', 'index.html'));
+        res.sendFile(path.resolve(__dirname, 'portal', 'index.html'));
     });
 }
 
