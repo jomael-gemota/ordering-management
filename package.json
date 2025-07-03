@@ -13,6 +13,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
+  "private": true,
+  "engines": {
+    "node": "19.x"
+  },
   "scripts": {
     "start": "nodemon server.js",
     "build": "cd portal && npm install && npm run build",
